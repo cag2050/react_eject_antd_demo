@@ -1,4 +1,4 @@
-// 实现异步加载
+// 实现路由按需加载
 import React from 'react';
 
 class Bundle extends React.Component {
