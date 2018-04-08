@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+
+.App > .ant-layout {
+  height: 100%;
 }
 
 .App-logo {
