@@ -3,16 +3,10 @@ import {Layout, Menu, Icon} from 'antd';
 import {
   // BrowserRouter as Router,
   Route,
-  // Switch,
+  Switch,
   Link
 } from 'react-router-dom'
-// 按需加载
-import async from '../async'
-let ButtonDemo = async(() => import("./ButtonDemo"));
-let InputDemo = async(() => import("./InputDemo"));
-
-// import ButtonDemo from './ButtonDemo'
-// import InputDemo from './InputDemo'
+import router from '../router';
 
 const {Header, Sider, Content} = Layout;
 
@@ -62,8 +56,12 @@ class MyLayout extends React.Component {
             />
           </Header>
           <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
-            <Route path='/' exact component={ButtonDemo}></Route>
-            <Route path='/input' exact component={InputDemo}></Route>
+            {/*<Route path='/' exact component={ButtonDemo}></Route>*/}
+            {/*<Route path='/input' exact component={InputDemo}></Route>*/}
+            <Switch>
+              {router.map((route, i) => <Route key={i} exact={!!route.exact} path={route.path} component={route.component} />)}
+              {/*<Route component={NotFound} />*/}
+            </Switch>
           </Content>
         </Layout>
       </Layout>
