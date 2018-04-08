@@ -1,3 +1,4 @@
+// 实现异步加载
 import React from 'react';
 
 class Bundle extends React.Component {
