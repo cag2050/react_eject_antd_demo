@@ -38,6 +38,7 @@
     "react": "^16.3.1",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "resolve": "1.6.0",
@@ -93,7 +94,14 @@
       "react-app"
     ],
     "plugins": [
-      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "css"
+        }
+      ]
     ]
   },
   "eslintConfig": {
