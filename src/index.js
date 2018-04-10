@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router} from 'react-router';
+import {Router, Route} from 'react-router';
 import history from './history';
 import './index.css';
 import App from './App';
@@ -11,7 +11,7 @@ import store from './store';
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <App/>
+      <Route component={App} />
     </Router>
   </Provider>, document.getElementById('root')
 );
