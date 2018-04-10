@@ -12,6 +12,8 @@
 1. 实现create-react-app中按需引入Ant-Design，eject后按需引入antd的2种方式，出处：https://blog.csdn.net/well2049/article/details/78801228。推荐使用第2种方式：在package.json里面直接添加代码，这种方式简单。
 1. 实现通过侧边栏导航Menu的Menu.Item控制Content部分的变化，详细说明地址：http://www.cnblogs.com/cag2050/p/8683161.html
 
+* 参考：https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651553926&idx=2&sn=696c0b5aa33636a15df09406a5f7812c&chksm=80255747b752de51241d6d2e3bb5265c80a3b2e36ac6ba928aa842ff3a8dda2a127276fc2ad0&mpshare=1&scene=1&srcid=0408St8McEc0NRtgLpU5XTFj&key=c9369063c8731b8275219f4cd3d1a910d4a0f656c8d01df81647d4aee483a31c0981b91690f70f012ee15e0ef68b319c047ca204e4b66dd203d2b869eec454556dcd4d52addab2d34766fd69aab9f639&ascene=0&uin=ODA1NjgxMTgx&devicetype=iMac+MacBookPro13%2C2+OSX+OSX+10.12.6+build(16G29)&version=12020810&nettype=WIFI&lang=zh_CN&fontScale=100&pass_ticket=sHv1WqmyWvuixoURe0pbURR7NEnVQmlGTGCnMjxI74edItHAQ5zQSmIu5AHv8FyC
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
