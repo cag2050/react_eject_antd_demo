@@ -3,9 +3,6 @@ import {Input} from 'antd';
 
 class InputDemo extends React.Component {
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps.location)
-    console.log(nextProps)
-    console.log(this.props.location)
   }
 
   render() {

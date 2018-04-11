@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MyLayout from './components/MyLayout'
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router'
 
 class App extends Component {
   render() {
@@ -19,4 +20,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(App);
+export default withRouter(connect(mapStateToProps)(App));
