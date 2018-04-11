@@ -10,7 +10,7 @@ class ButtonDemo extends React.Component {
   render() {
     return (
       <div>
-        <Button onClick={this.linkTo}>BUTTON</Button>
+        <Button onClick={this.linkTo}>BUTTON：点击后跳转到首页</Button>
       </div>
     )
   }
