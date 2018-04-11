@@ -16,10 +16,6 @@ const MenuDemo = withRouter(({history}) => {
           <span>input</span>
           <NavLink to='/input'></NavLink>
         </Menu.Item>
-        <Menu.Item key="3">
-          <Icon type="upload"/>
-          <span>nav 3</span>
-        </Menu.Item>
       </Menu>
     </div>
   )
