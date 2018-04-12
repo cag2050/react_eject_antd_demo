@@ -8,6 +8,7 @@ import {
 import router from '../router';
 import MenuDemo from './MenuDemo'
 import Login from './Login'
+import PrivateRoute from '../projectTools/PrivateRoute'
 
 const {Header, Sider, Content} = Layout;
 
@@ -44,7 +45,7 @@ class MyLayout extends React.Component {
           </Header>
           <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
             <Switch>
-              {router.map((route, i) => <Route key={i} exact={!!route.exact} path={route.path}
+              {router.map((route, i) => <PrivateRoute key={i} exact={!!route.exact} path={route.path}
                                                component={route.component}/>)}
               <Route key='/login' exact path='/login' component={Login}/>
             </Switch>
