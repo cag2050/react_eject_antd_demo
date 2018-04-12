@@ -1,5 +1,5 @@
 import React from 'react';
-import Bundle from './bundle';
+import Bundle from './projectTools/bundle';
 
 export default [
   {

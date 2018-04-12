@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button} from 'antd';
-import history from '../history'
+import history from '../projectTools/history'
 
 class ButtonDemo extends React.Component {
   linkTo = () => {

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route} from 'react-router';
-import history from './history';
+import history from './projectTools/history';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './projectTools/registerServiceWorker';
 import { Provider } from 'react-redux';
 import store from './store';
 
