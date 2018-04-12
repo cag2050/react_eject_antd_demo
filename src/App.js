@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import MyLayout from './components/MyLayout'
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router'
+import {connect} from 'react-redux';
+import {withRouter} from 'react-router'
+// import {Route} from 'react-router-dom'
+// import Login from "./components/Login";
 
 class App extends Component {
   render() {

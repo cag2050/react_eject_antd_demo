@@ -1,13 +1,13 @@
 import React from 'react'
 import {Layout, Icon} from 'antd';
 import {
-  Route,
+  // Route,
   Switch,
   // Redirect
 } from 'react-router-dom'
 import router from '../router';
 import MenuDemo from './MenuDemo'
-import Login from './Login'
+// import Login from './Login'
 import PrivateRoute from '../projectTools/PrivateRoute'
 
 const {Header, Sider, Content} = Layout;
@@ -47,7 +47,7 @@ class MyLayout extends React.Component {
             <Switch>
               {router.map((route, i) => <PrivateRoute key={i} exact={!!route.exact} path={route.path}
                                                component={route.component}/>)}
-              <Route key='/login' exact path='/login' component={Login}/>
+              {/*<Route key='/login' exact path='/login' component={Login}/>*/}
             </Switch>
           </Content>
         </Layout>
