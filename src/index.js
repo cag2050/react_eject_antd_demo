@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, Switch, Redirect} from 'react-router';
+import {
+  Router,
+  Route,
+  Switch,
+  Redirect} from 'react-router';
 import history from './projectTools/history';
 import './index.css';
 import App from './App';
@@ -16,8 +20,8 @@ ReactDOM.render(
     <Router history={history}>
       <Switch>
         <Route key='/login' exact path='/login' component={Login}/>
-        <Route component={App}/>
-        <Route path='/not_found' component={NotFound} />
+        <Route path='/not_found' component={NotFound}/>
+        <Route path='/' component={App}/>
         <Redirect from='*' to='/not_found' />
       </Switch>
     </Router>

@@ -28,12 +28,5 @@ export default [
     component(props) {
       return <Bundle {...props} load={() => import('./components/PrivateRouteDemo')} />;
     }
-  },
-  {
-    path: '/not_found',
-    exact: true,
-    component(props) {
-      return <Bundle {...props} load={() => import('./components/NotFound')} />;
-    }
   }
 ];
