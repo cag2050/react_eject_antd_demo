@@ -1,12 +1,13 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 
-let a = 'aaa'
+// let isLogin = false
+
 const PrivateRoute = ({component: Component, ...rest}) => (
   <Route
     {...rest}
     render={props =>
-      a === 'aaa' ? (
+      localStorage.getItem('isLogin') === 'true' ? (
         <Component {...props} />
       ) : (
         <Redirect
