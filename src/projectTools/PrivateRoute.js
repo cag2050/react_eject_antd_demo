@@ -6,7 +6,7 @@ const PrivateRoute = ({component: Component, ...rest}) => (
   <Route
     {...rest}
     render={props =>
-      a === 'aaa222' ? (
+      a === 'aaa' ? (
         <Component {...props} />
       ) : (
         <Redirect
