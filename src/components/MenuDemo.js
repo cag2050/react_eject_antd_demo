@@ -21,6 +21,11 @@ const MenuDemo = withRouter(({history}) => {
           <span>PrivateRoute</span>
           <NavLink to='/private_route'></NavLink>
         </Menu.Item>
+        <Menu.Item key="/table">
+          <Icon type="video-camera"/>
+          <span>table</span>
+          <NavLink to='/table'></NavLink>
+        </Menu.Item>
       </Menu>
     </div>
   )
