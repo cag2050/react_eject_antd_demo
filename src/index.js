@@ -14,8 +14,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path='/' exact component={App}/>
         <Route key='/login' exact path='/login' component={Login}/>
+        <Route path='/' component={App}/>
       </Switch>
     </Router>
   </Provider>, document.getElementById('root')
