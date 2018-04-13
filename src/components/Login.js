@@ -5,7 +5,7 @@ import history from '../projectTools/history'
 class Login extends React.Component {
 
   loginMethod = () => {
-    localStorage.setItem('isLogin', 'true')
+    localStorage.setItem('isLogin', 'yes')
     history.push('/')
   }
 
