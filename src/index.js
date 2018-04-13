@@ -13,17 +13,13 @@ import registerServiceWorker from './projectTools/registerServiceWorker';
 import {Provider} from 'react-redux';
 import store from './store';
 import Login from "./components/Login";
-import NotFound from './components/NotFound'
-// import { Route } from 'react-router-dom'
 
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path='/*' exact component={App}/>
-        <Route key='/login' exact path='/login' component={Login}/>
-        <Route component={NotFound}/>
-        {/*<Redirect from='*' to='/not_found' />*/}
+        <Route exact path='/login' component={Login}/>
+        <Route component={App}/>
       </Switch>
     </Router>
   </Provider>, document.getElementById('root')

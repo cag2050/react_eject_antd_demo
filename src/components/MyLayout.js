@@ -11,6 +11,7 @@ import MenuDemo from './MenuDemo'
 import PrivateRoute from '../projectTools/PrivateRoute'
 import {withRouter} from "react-router";
 import history from "../projectTools/history";
+import NotFound from "./NotFound";
 
 const {Header, Sider, Content} = Layout;
 
@@ -55,7 +56,7 @@ class MyLayout extends React.Component {
             <Switch>
               {router.map((route, i) => <PrivateRoute key={i} exact={!!route.exact} path={route.path}
                                                       component={route.component}/>)}
-              {/*<Route key='/login' exact path='/login' component={Login}/>*/}
+              <PrivateRoute component={NotFound}/>
             </Switch>
           </Content>
         </Layout>

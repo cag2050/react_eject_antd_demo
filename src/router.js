@@ -16,12 +16,6 @@ export default [
       return <Bundle {...props} load={() => import('./components/InputDemo')}/>;
     }
   },
-  // {
-  //   path: '/login',
-  //   component(props) {
-  //     return <Bundle {...props} load={() => import('./components/Login')}/>;
-  //   }
-  // },
   {
     path: '/private_route',
     exact: true,
