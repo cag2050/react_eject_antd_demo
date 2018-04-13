@@ -1,13 +1,10 @@
 import React from 'react'
 import {Layout, Icon, Button} from 'antd';
 import {
-  // Route,
   Switch,
-  // Redirect
 } from 'react-router-dom'
 import router from '../router';
 import MenuDemo from './MenuDemo'
-// import Login from './Login'
 import PrivateRoute from '../projectTools/PrivateRoute'
 import {withRouter} from "react-router";
 import history from "../projectTools/history";

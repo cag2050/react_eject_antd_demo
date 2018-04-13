@@ -4,7 +4,6 @@ import {
   Router,
   Route,
   Switch,
-  // Redirect
 } from 'react-router';
 import history from './projectTools/history';
 import './index.css';
