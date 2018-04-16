@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class componentDemo extends React.Component {
   constructor(props) {
@@ -8,8 +9,18 @@ class componentDemo extends React.Component {
     this.state = {
       key1: 'value1'
     }
-    console.log(this.props)
-    console.log(this.state)
+    // console.log(this.props)
+    // console.log(this.state)
+  }
+
+  // defaultProps 用来确保 this.props.title 在父组件没有特别指定的情况下，有一个初始值。
+  // 类型检查发生在 defaultProps 赋值之后，所以类型检查也会应用在 defaultProps 上面。
+  static defaultProps = {
+    title: 'defaultTitle'
+  }
+
+  static propTypes = {
+    title: PropTypes.string.isRequired
   }
 
   render() {
@@ -18,6 +29,7 @@ class componentDemo extends React.Component {
         componentDemo: <br/>
         state值：'key1': {this.state.key1} <br/>
         页面路径：{this.props.location.pathname} <br/>
+        title（从props中得到）： {this.props.title}
       </div>
     )
   }
