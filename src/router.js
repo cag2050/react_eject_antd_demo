@@ -29,5 +29,12 @@ export default [
     component(props) {
       return <Bundle {...props} load={() => import('./components/TableDemo')} />;
     }
+  },
+  {
+    path: '/component',
+    exact: true,
+    component(props) {
+      return <Bundle {...props} load={() => import('./components/componentDemo')} />;
+    }
   }
 ];

@@ -26,6 +26,11 @@ const MenuDemo = withRouter(({history}) => {
           <span>table</span>
           <NavLink to='/table'></NavLink>
         </Menu.Item>
+        <Menu.Item key="/component">
+          <Icon type="video-camera"/>
+          <span>组件写法</span>
+          <NavLink to='/component'></NavLink>
+        </Menu.Item>
       </Menu>
     </div>
   )

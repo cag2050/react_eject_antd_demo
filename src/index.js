@@ -13,6 +13,7 @@ import {Provider} from 'react-redux';
 import store from './store';
 import Login from "./components/Login";
 import axios from 'axios'
+// import axiosWrapper from './projectTools/axiosWrapper'
 
 // Add a request interceptor
 axios.interceptors.request.use(function (config) {
@@ -36,7 +37,7 @@ axios.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 
-axios.get('/aaa')
+// axiosWrapper.get('/aaa')
 
 ReactDOM.render(
   <Provider store={store}>
