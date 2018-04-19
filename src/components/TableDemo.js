@@ -3,53 +3,76 @@ import {Table, Button} from 'antd'
 
 class TableDemo extends React.Component {
   state = {
-    columnsData: [{
-      title: 'Name',
-      dataIndex: 'name'
-    }, {
-      title: 'Cash Assets',
-      dataIndex: 'money',
-    }, {
-      title: 'Address',
-      dataIndex: 'address',
-    }],
+    columnsData: [
+      {title: 'Full Name', dataIndex: 'name', key: 'name'},
+      {title: 'Age', dataIndex: 'age', key: 'age',},
+      {title: 'Column 1', dataIndex: 'address', key: '1'},
+      {title: 'Column 2', dataIndex: 'address', key: '2'},
+      {title: 'Column 3', dataIndex: 'address', key: '3'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 4', dataIndex: 'address', key: '4'},
+      {title: 'Column 5', dataIndex: 'address', key: '5'},
+      {title: 'Column 6', dataIndex: 'address', key: '6'},
+      {title: 'Column 7', dataIndex: 'address', key: '7'},
+      {title: 'Column 8', dataIndex: 'address', key: '8'},
+      {
+        title: 'Action',
+        key: 'operation',
+        // fixed: 'right',
+        render: () => <a>action</a>,
+      },
+    ],
 
-    dataSourceData: [{
-      key: '1',
-      name: 'John Brown',
-      money: '￥300,000.00',
-      address: 'New York No. 1 Lake Park',
-    }, {
-      key: '2',
-      name: 'Jim Green',
-      money: '￥1,256,000.00',
-      address: 'London No. 1 Lake Park',
-    }, {
-      key: '3',
-      name: 'Joe Black',
-      money: '￥120,000.00',
-      address: 'Sidney No. 1 Lake Park',
-    }]
+    dataSourceData: []
   }
 
   setTableData = () => {
+    const data = [];
+    for (let i = 0; i < 100; i++) {
+      data.push({
+        key: i,
+        name: `Edrward ${i}`,
+        age: 32,
+        address: `London Park no. ${i}`,
+      });
+    }
     this.setState({
-      dataSourceData: []
+      dataSourceData: data
     })
   }
 
   render() {
     return (
       <div>
-        <Button onClick={this.setTableData}>点击后setState（设置表格数据列为空）</Button>
+        <Button onClick={this.setTableData}>点击后setState（设置表格数据列）</Button>
         <Table
           dataSource={this.state.dataSourceData}
           columns={this.state.columnsData}
+          // scroll={{x: true, y: 300}}
+          scroll={{x: 1500, y: 300}}
         />
       </div>
     )
   }
-
 }
 
 export default TableDemo
