@@ -1,0 +1,13 @@
+.ant-table td {
+  /*white-space: nowrap;*/
+  width: 100px;
+}
+
+.ant-table th {
+  width: 100px;
+}
+
+.ant-table th span {
+  /*display: inline-block;*/
+  /*width: 218px;*/
+}
