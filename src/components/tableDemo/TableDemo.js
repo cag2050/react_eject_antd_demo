@@ -1,6 +1,7 @@
 import React from 'react'
 import {Table, Button} from 'antd'
-import './tableDemo.css'
+// import './tableDemo.css'
+import './tableDemo.stylus'
 
 class TableDemo extends React.Component {
   constructor(props) {
