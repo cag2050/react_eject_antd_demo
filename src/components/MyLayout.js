@@ -47,7 +47,7 @@ class MyLayout extends React.Component {
               type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
               onClick={this.toggle}
             />
-            <Button onClick={this.logout}>退出</Button>
+            <Button onClick={this.logout} style={{float: 'right', top: '15px', position: 'relative', right: '-35px'}}>退出</Button>
           </Header>
           <Content style={{margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280}}>
             <Switch>
